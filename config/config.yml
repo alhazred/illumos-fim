@@ -1,0 +1,20 @@
+# Events configuration, where to store produced events
+events:
+  file: /var/lib/ifim/events.json
+
+# Simple files and folders information
+monitor:
+  - path: /bin
+    label: "bin"
+    ignore: [".swp"]
+  - path: /usr/bin
+    label: "usr/bin"
+  - path: /etc
+    label: ["etc"]
+
+# App procedure and errors logging
+log:
+  file: /var/log/ifim/ifim.log
+  # Available levels [debug, info, error, warning]
+  level: info
+
