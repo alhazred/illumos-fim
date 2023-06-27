@@ -51,6 +51,7 @@ illumos
 
 ### Sample output
 tail -f /var/log/ifim/ifim.log
+```
 Jun 27 10:10:32 [INFO] Events file: /var/lib/ifim/events.json
 Jun 27 10:10:32 [INFO] illumos File Integrity Monitor started
 Jun 27 10:10:32 [INFO] Monitoring path: /bin
@@ -62,8 +63,9 @@ Jun 27 10:10:32 [INFO] Ignore for '/etc' not set
 Jun 27 10:11:02 [INFO] Changes found: /etc/wtmpx MODIFY
 Jun 27 10:11:02 [INFO] Changes found: /etc/utmpx MODIFY
 ^C
-
+```
 tail -f /var/lib/ifim/events.json
+```
 {"id":"faad0126-49e8-4a03-a5ce-b6b6b355ccf3","path":"/etc/dev/.devfsadm_dev.lock","mode":"100644","uid":"0","gid":"0","filesize":"4","mtime":"1671211277","atime":"1671211277","ctime":"1671211277","operation":"MODIFY","timestamp":"1671211286106","checksum":"UNKNOWN","label":"etc"}
 {"id":"516102df-70f2-4086-ad41-cd93dae49a47","path":"/etc/dev/.devlink_db","mode":"100644","uid":"0","gid":"0","filesize":"139264","mtime":"1671211277","atime":"1671211277","ctime":"1671211277","operation":"MODIFY","timestamp":"1671211286108","checksum":"UNKNOWN","label":"etc"}
 {"id":"fb6c42f0-855f-40be-bdb6-fb6cf1831aff","path":"/etc/svc/volatile/init.state","mode":"100600","uid":"0","gid":"0","filesize":"412","mtime":"1671211277","atime":"1671211277","ctime":"1671211277","operation":"MODIFY","timestamp":"1671211286111","checksum":"553a0074d394b6eb0f6dbd4e9a952ebedf19580ea87880caa7ba066b2efeb3d11ca6aa9037384c0516012aab04e638b362f2f6ebc04eae5ea970319c70ed516b","label":"etc"}
@@ -72,3 +74,4 @@ tail -f /var/lib/ifim/events.json
 {"id":"80485ccc-de87-4430-9e3b-dcad6e04a795","path":"/etc/utmpx","mode":"100644","uid":"0","gid":"2","filesize":"4836","mtime":"1671211273","atime":"1671211273","ctime":"1671211273","operation":"MODIFY","timestamp":"1671211286118","checksum":"UNKNOWN","label":"etc"}
 {"id":"f9730be9-91be-4111-a8c3-eeeaa1be3aed","path":"/etc/wtmpx","mode":"100644","uid":"4","gid":"4","filesize":"398412","mtime":"1687860647","atime":"1687860647","ctime":"1687860647","operation":"MODIFY","timestamp":"1687860662035","checksum":"UNKNOWN","label":""}
 {"id":"e0342ee0-ab71-4025-bf8a-522deb4a5e78","path":"/etc/utmpx","mode":"100644","uid":"0","gid":"2","filesize":"4092","mtime":"1687860647","atime":"1687860652","ctime":"1687860647","operation":"MODIFY","timestamp":"1687860662049","checksum":"UNKNOWN","label":""}
+```
